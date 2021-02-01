@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_7"
+        style="@style/CalcButtons"
+        android:text="@string/_7"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_8"
+        style="@style/CalcButtons"
+        android:text="@string/_8"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_9"
+        style="@style/CalcButtons"
+        android:text="@string/_9"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_x"
+        style="@style/CalcButtonsColor"
+        android:text="@string/x"/>
+</LinearLayout>
