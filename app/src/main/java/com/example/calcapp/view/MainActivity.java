@@ -15,8 +15,8 @@ import com.google.android.material.textview.MaterialTextView;
 public class MainActivity extends AppCompatActivity {
 
     private MaterialTextView tvDisplay;
-    public double num1 = 0;
-    public double num2 = 0;
+    public String num1 = "";
+    public String num2 = "";
     public double total;
     public String op;
     public String nums = "";
@@ -52,37 +52,37 @@ public class MainActivity extends AppCompatActivity {
                         case "C":
                             nums = "";
                             total = 0;
-                            num1 = 0;
-                            num2 = 0;
+                            num1 = "";
+                            num2 = "";
                             op = "";
                             tvDisplay.setText(nums);
                             break;
                         case "+":
-                            num1 = Double.parseDouble(tvDisplay.getText().toString());
+                            num1 = tvDisplay.getText().toString();
                             nums = "";
                             op = "+";
                             tvDisplay.setText(nums);
                             break;
                         case "-":
-                            num1 = Double.parseDouble(tvDisplay.getText().toString());
+                            num1 = tvDisplay.getText().toString();
                             nums = "";
                             op = "-";
                             tvDisplay.setText(nums);
                             break;
                         case "/":
-                            num1 = Double.parseDouble(tvDisplay.getText().toString());
+                            num1 = tvDisplay.getText().toString();
                             nums = "";
                             op = "/";
                             tvDisplay.setText(nums);
                             break;
                         case "x":
-                            num1 = Double.parseDouble(tvDisplay.getText().toString());
+                            num1 = tvDisplay.getText().toString();
                             nums = "";
                             op = "X";
                             tvDisplay.setText(nums);
                             break;
                         case "=":
-                            num2 = Double.parseDouble(tvDisplay.getText().toString());
+                            num2 = tvDisplay.getText().toString();
                             viewModel.calculateSum(num1, num2, op);
                             break;
                         default:

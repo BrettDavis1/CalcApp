@@ -10,7 +10,10 @@ public class MainViewModel extends ViewModel {
     public LiveData<Double> getTotal() {
         return _total;
     }
-    public void calculateSum(Double num1, Double num2, String op) {
+    public void calculateSum(String stringNum1, String stringNum2, String op) {
+        Double num1 = Double.parseDouble(stringNum1);
+        Double num2 = Double.parseDouble(stringNum2);
+
         switch(op) {
             case "+":
                 _total.setValue(num1 + num2);
